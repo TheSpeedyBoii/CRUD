@@ -8,3 +8,6 @@ def index(request):
 
 def we(request):
     return render(request, 'pages/we.html')
+
+def books(request):
+    return render(request, 'books/index.html')
