@@ -4,7 +4,15 @@
 
 {% block content %} 
 
-Create book
+<div class="card">
+    <div class="card-header">Create a book</div>
+    <div class="card-body">
+        <h4 class="card-title">Book information</h4>
+        {% include 'books/form.html'%}
+    </div>
+    <div class="card-footer text-muted">Footer</div>
+</div>
+
 
 {% endblock %}
 

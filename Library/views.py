@@ -11,3 +11,9 @@ def we(request):
 
 def books(request):
     return render(request, 'books/index.html')
+
+def create(request):
+    return render(request, 'books/create.html')
+
+def edit(request):
+    return render(request, 'books/edit.html')
