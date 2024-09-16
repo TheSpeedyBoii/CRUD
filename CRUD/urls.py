@@ -19,6 +19,7 @@ from Library import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Library.urls'))
+    path('', include('Library.urls')),
+    path('accounts/', include('django.contrib.auth.urls'))
 ]
 
