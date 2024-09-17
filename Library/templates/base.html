@@ -24,9 +24,9 @@
         <header>
             <nav class="navbar navbar-expand navbar-light bg-light">
                 <div class="nav navbar-nav">
-                    <a class="nav-item nav-link" href="{% url 'index' %}">Home</a>
-                    <a class="nav-item nav-link" href="{% url 'books' %}">Books</a>
-                    <a class="nav-item nav-link" href="{% url 'we' %}">About Us</a>
+                    <a class="nav-item nav-link" href="{% url 'index' %}"><strong>Home</strong></a>
+                    <a class="nav-item nav-link" href="{% url 'books' %}"><strong>Books</strong></a>
+                    <a class="nav-item nav-link" href="{% url 'we' %}"><strong>About Us</strong></a>
                     {% if user.is_authenticated %}
                         <a class="nav-item nav-link active" href="{% url 'logout'%}">Logout</a>
                         <span class="navbar-text me-2">User: {{ user.username}}</span>
@@ -38,9 +38,9 @@
             
         </header>
         <main>
-            <div class="container">
+            <div class="container ">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mt-5">
                         {% block content %} {% endblock %}
                     </div>
                 </div>
